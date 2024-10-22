@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Preprocessing App</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #fafafa; padding: 20px; color: #333;">
+
+    <header style="text-align: center; margin-bottom: 20px;">
+        <h1 style="font-size: 2.4rem; color: #222;">Data Preprocessing Application</h1>
+    </header>
+
+    <section style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 0 auto;">
+        <h2 style="font-size: 1.8rem; color: #444; margin-bottom: 15px;">Upload Your File</h2>
+        
+        <form action="/upload" method="post" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: 15px;">
+            <label for="file" style="font-size: 1rem; color: #666;">Choose a file (CSV, Excel, PDF, Text):</label>
+            <input type="file" id="file" name="file" accept=".csv,.xlsx,.xls,.pdf,.txt" required
+                   style="padding: 8px; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #fff; cursor: pointer;">
+
+                   <button type="submit" 
+                   style="padding: 10px; 
+                          font-size: 1rem; 
+                          background-color: #28a745; 
+                          color: white; 
+                          border: none; 
+                          border-radius: 4px; 
+                          cursor: pointer; 
+                          transition: background-color 0.2s;"
+                   onmouseover="this.style.backgroundColor='#218838';"
+                   onmouseout="this.style.backgroundColor='#28a745';">
+               Upload
+           </button>
+           
+          
+            
+        </form>
+    </section>
+
+</body>
+</html>
